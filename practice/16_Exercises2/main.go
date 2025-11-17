@@ -38,7 +38,7 @@ func main() {
 	// 	case 4:
 	// 		fmt.Printf("Iteration is %v and value of x is %v\n", i, x)
 	// 	}
-	var i int = 10
+	i := 10
 	for i >= 0 {
 		fmt.Printf("countdown %v\n", i)
 		i--
