@@ -39,7 +39,10 @@ func main() {
 	// 		fmt.Printf("Iteration is %v and value of x is %v\n", i, x)
 	// 	}
 	i := 10
-	for i >= 0 {
+	for {
+		if i < 0 {
+			break
+		}
 		fmt.Printf("countdown %v\n", i)
 		i--
 	}
