@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
 )
 
 func main() {
@@ -25,19 +24,24 @@ func main() {
 	// 	}
 	// }
 
-	for i := 0; i < 42; i++ {
-		x := rand.Intn(5)
-		switch x {
-		case 0:
-			fmt.Printf("Iteration is %v and value of x is %v\n", i, x)
-		case 1:
-			fmt.Printf("Iteration is %v and value of x is %v\n", i, x)
-		case 2:
-			fmt.Printf("Iteration is %v and value of x is %v\n", i, x)
-		case 3:
-			fmt.Printf("Iteration is %v and value of x is %v\n", i, x)
-		case 4:
-			fmt.Printf("Iteration is %v and value of x is %v\n", i, x)
-		}
+	//  for i := 0; i < 42; i++ {
+	// 	x := rand.Intn(5)
+	// 	switch x {
+	// 	case 0:
+	// 		fmt.Printf("Iteration is %v and value of x is %v\n", i, x)
+	// 	case 1:
+	// 		fmt.Printf("Iteration is %v and value of x is %v\n", i, x)
+	// 	case 2:
+	// 		fmt.Printf("Iteration is %v and value of x is %v\n", i, x)
+	// 	case 3:
+	// 		fmt.Printf("Iteration is %v and value of x is %v\n", i, x)
+	// 	case 4:
+	// 		fmt.Printf("Iteration is %v and value of x is %v\n", i, x)
+	// 	}
+	var i int = 10
+	for i >= 0 {
+		fmt.Printf("countdown %v\n", i)
+		i--
 	}
+
 }
