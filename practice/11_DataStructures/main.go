@@ -32,7 +32,26 @@ func main() {
 	fmt.Println("There are", len(food), "flavours of ice-cream")
 	fmt.Println("----------------------------------------------")
 	food = append(food, "Chocolate", "Mint", "Rum&Raisin")
+	// You can also range over a slice by using
+	// 	for _, foodName := range food[:4] {
 
+	for _, foodName := range food {
+		fmt.Printf("%v\n", foodName)
+	}
+	fmt.Println("There are", len(food), "flavours of ice-cream")
+	fmt.Println("----------------------------------------------")
+	// Slices of Slice
+	fmt.Println(food[1:3]) // start at 2nd entry go to 4th
+	fmt.Println(food[:2])  // start at 0th and go to 3rd entry
+	fmt.Println(food[3:])  // Start at 4th and go to end
+	fmt.Println(food[:])   // Return all
+	fmt.Println("----------------------------------------------")
+
+	// Deleting from Slice - append to set new values to slice, slice to position in array you want to remove, then unfurl from the next position to the end
+	fmt.Println("There are", len(food), "flavours of ice-cream")
+	fmt.Println("----------------------------------------------")
+
+	food = append(food[:2], food[:3]...)
 	for _, foodName := range food {
 		fmt.Printf("%v\n", foodName)
 	}
