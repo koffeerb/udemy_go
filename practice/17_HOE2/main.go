@@ -13,7 +13,7 @@ func main() {
 
 	// x = append(x, y...)
 	// fmt.Println("after append of second slice", x)
-	x = append(x, x[3:6])
+	x = append(x[:3], x[6:]...)
 
 	fmt.Println(x)
 }
